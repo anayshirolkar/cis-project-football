@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta name="description" content="A beginner's educational guide and statistical overview of European soccer legends Lionel Messi, Cristiano Ronaldo, and Neymar Jr.">
+    <meta name="keywords" content="soccer, european football, Lionel Messi, Cristiano Ronaldo, Neymar Jr, Ballon d'Or, soccer statistics">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stats & Fan Zone - The Big Three</title>
@@ -25,24 +27,52 @@
             <h3>Statistical Comparison Table</h3>
             <p>A quick breakdown of the key facts defining our Big Three.</p>
             
-            <table border="1" cellpadding="10" cellspacing="0" style="width:100%; text-align:left; border-collapse: collapse; margin-bottom: 20px;">
-                <tr style="background-color: #f1f5f9;">
-                    <th>Player</th>
-                    <th>Notable Record</th>
-                </tr>
-                <tr>
-                    <td><strong>Lionel Messi</strong></td>
-                    <td>Most Ballon d'Or Titles (8)</td>
-                </tr>
-                <tr>
-                    <td><strong>Cristiano Ronaldo</strong></td>
-                    <td>All-Time Top Scorer (850+ Goals)</td>
-                </tr>
-                <tr>
-                    <td><strong>Neymar Jr.</strong></td>
-                    <td>Most Expensive Transfer ($263M)</td>
-                </tr>
-            </table>
+            <!-- UPDATED TABLE (3 Columns, 3 Data Rows) -->
+<table border="1" cellpadding="10" cellspacing="0" style="width:100%; text-align:left; border-collapse: collapse; margin-bottom: 20px;">
+    <tr style="background-color: #f1f5f9;">
+        <th>Player</th>
+        <th>National Team</th>
+        <th>Notable Record</th>
+    </tr>
+    <tr>
+        <td><strong>Lionel Messi</strong></td>
+        <td>Argentina</td>
+        <td>Most Ballon d'Or Titles (8)</td>
+    </tr>
+    <tr>
+        <td><strong>Cristiano Ronaldo</strong></td>
+        <td>Portugal</td>
+        <td>All-Time Top Scorer (850+ Goals)</td>
+    </tr>
+    <tr>
+        <td><strong>Neymar Jr.</strong></td>
+        <td>Brazil</td>
+        <td>Most Expensive Transfer ($263M)</td>
+    </tr>
+        </table>
+        <form action="#">
+            <div style="margin-bottom: 10px;">
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" required>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="email">Email Address:</label><br>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="favplayer">Favorite Legend:</label><br>
+                <select id="favplayer" name="favplayer">
+                    <option value="messi">Lionel Messi</option>
+                    <option value="ronaldo">Cristiano Ronaldo</option>
+                    <option value="neymar">Neymar Jr.</option>
+                </select>
+            </div>
+            <div style="margin-bottom: 10px;">
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="3" required></textarea>
+            </div>
+            <button type="submit">Submit Vote</button>
+        </form>
             
             <div class="media-container">
                 <h3>Media Page</h3>
@@ -66,7 +96,7 @@
             </div>
             <div class="sidebar-box">
                 <h3>Fanzone Form</h3>
-                <form>
+                <form action="#">
                     <label>Who is your favorite player?</label><br>
                     <input type="radio" id="messi" name="vote" value="Messi">
                     <label for="messi">Messi</label><br>
