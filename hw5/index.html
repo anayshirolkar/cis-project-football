@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HW5 – Argumentative Vis: The Minimum Wage Debate</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header class="page-header">
+    <div class="wrap">
+      <p class="eyebrow">Homework #5 · Argumentative Visualization</p>
+      <h1>Should the U.S. Raise the Federal Minimum Wage?</h1>
+      <p class="byline">
+        <span class="name">Anay Shirolkar</span>
+        <span class="sep">·</span>
+        <a class="email" href="mailto:ASURITE@asu.edu">abshirol@asu.edu</a>
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap">
+
+    <section class="intro">
+      <h2>The Topic</h2>
+      <p class="intro-text">
+        Increasing the current federal minimum wage of $7.25 remains the central issue in American economic policy. Those who favor an increase in the minimum wage say that inflation has continually reduced its purchasing power and that raising it increases low-income workers' salaries, while those against believe that one-size-fits-all approach poses a risk of reducing employment opportunities in areas where cost of living is low and also forgets about the 30 states and Washington D.C., which have set higher wages on their own. The graphs below illustrate how the same set of data from the Department of Labor (as of January 1, 2020), can tell conflicting stories.
+
+      </p>
+      <p class="source">
+        <strong>Dataset:</strong>
+        <a href="https://www.kaggle.com/lislejoem/us-minimum-wage-by-state-from-1968-to-2017" target="_blank" rel="noopener">
+          US Minimum Wage by State from 1968 to 2020</a>
+        (Joe Lisle, Kaggle; compiled from the U.S. Department of Labor).
+      </p>
+    </section>
+
+    <section class="debate">
+      <article class="side side-yes">
+        <div class="badge">YES · Raise it</div>
+        <h3 class="chart-title">Minimum-Wage Workers Have Taken a 30% Pay Cut Since 1979</h3>
+        <p class="chart-sub">Federal minimum wage per hour, adjusted for inflation (2020 dollars)</p>
+        <div id="chart-yes" class="chart"></div>
+        <p class="caption">
+          The federal minimum wage on January 1 of each year from 1968 to 2020, converted to 2020 dollars.
+          The dashed line marks its 1979 peak; the red area is the buying power workers have lost since.
+          Congress last raised it in 2009.
+        </p>
+      </article>
+
+      <article class="side side-no">
+        <div class="badge">NO · Leave it to the states</div>
+        <h3 class="chart-title">States Are Already Raising Wages Without Washington</h3>
+        <p class="chart-sub">Effective minimum wage per hour by state, January 1, 2020</p>
+        <div id="chart-no" class="chart"></div>
+        <p class="caption">
+          The minimum wage in force in each state and D.C. on January 1, 2020. Green states set their own
+          minimum above the $7.25 federal floor; grey states use the federal rate. Local lawmakers are
+          already matching wages to their own cost of living.
+        </p>
+      </article>
+    </section>
+
+    <section class="writeups">
+      <article class="writeup writeup-yes">
+        <h3>Left Chart: Rhetorical Techniques</h3>
+        <p class="todo">The use of such a graph in making a case for raising the minimum wage is based on inflation adjustment to 2020 dollars and setting the reference point at the peak value in 1979 ($10.33), thus shifting the horizontal line of equal purchasing power to a dramatic decrease of 30%. Limiting the vertical scale from 0 to $6 highlights the magnitude of that decrease by making the shaded portion of "lost buying power" visually predominant.
+
+Red color and related associations are used as visual prompts, and the title and "FROZEN AT $7.25" banner make the reader understand that Congress did not keep the wages unchanged but actively cut them. Expressing the difference between 1979 and 2020 in annual rather than hourly terms makes the argument more relevant: "$6,406 less a year for a full-time worker".</p>
+      </article>
+      <article class="writeup writeup-no">
+        <h3>Right Chart: Rhetorical Techniques</h3>
+        <p class="todo">The graph tries to dissuade government mandate because it takes into account only a one-time snapshot:nominal effective minimum wages as of January 1, 2020, with no consideration for the effects of several decades of inflation. Setting zero point on the x-axis allows the bars to be proportional in terms of their size and makes $7.25 look like an unchangeable norm.
+
+Arranging all 50 states and the District of Columbia in descending order creates two groups of states: a green (showing progress and initiative) majority and a grey (indifference) minority. The title of the chart ("28 states + D.C. have already raised their minimum wage on their own"), the title ("Without Washington"), and the phrase "their voters' choice to make" imply that a federal mandate is redundant and that maintaining the status quo is democracy in action.</p>
+      </article>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="wrap">
+      Data: U.S. Department of Labor via Kaggle (Lisle, 1968–2020). Inflation adjustment uses the dataset's 2020-dollar columns.
+    </div>
+  </footer>
+
+  <script src="js/d3.v7.min.js"></script>
+  <script src="js/charts.js"></script>
+</body>
+</html>
